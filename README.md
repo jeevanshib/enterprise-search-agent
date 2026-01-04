@@ -111,47 +111,47 @@ HR_Policy_Leave.pdf
 
 HR_Policy_Probation.pdf
 
-##⚠️ Design Notes & Tradeoffs
+## ⚠️ Design Notes & Tradeoffs
 
-- **Document ingestion and vector DB persistence are intentionally mocked in this MVP.
+- Document ingestion and vector DB persistence are intentionally mocked in this MVP.
 
-- **The focus is on agent orchestration, routing logic, and grounded answer generation.
+- The focus is on agent orchestration, routing logic, and grounded answer generation.
 
-- **The architecture cleanly supports plugging in:
+- The architecture cleanly supports plugging in:
 
-- **Chroma / FAISS / Elasticsearch
+- Chroma / FAISS / Elasticsearch
 
-- **OpenAI / Azure OpenAI
+- OpenAI / Azure OpenAI
 
-- **Jira, SQL, internal enterprise systems
+- Jira, SQL, internal enterprise systems
 
-##🔮 Future Enhancements
+## 🔮 Future Enhancements
 
-- **Real document ingestion & embedding pipelines
+- Real document ingestion & embedding pipelines**
 
-- **Authentication and role-based access control
+- Authentication and role-based access control**
 
-- **Feedback-driven answer re-ranking
+- Feedback-driven answer re-ranking
 
-- **Streaming responses
+- Streaming responses
 
-- **Multi-turn conversational memory
+- Multi-turn conversational memory
 
-- **Observability and tracing for agents
+- Observability and tracing for agents
 
-##🧪 Testing
+## 🧪 Testing
 
 The repository includes test scripts for:
 
-- **Context management
+- Context management
 
-- **Routing logic
+- Routing logic
 
-- **Retrieval agents
+- Retrieval agents
 
-- **Evidence aggregation
+- Evidence aggregation
 
-- **End-to-end pipeline execution
+- End-to-end pipeline execution
 
 ## ✅ Project Status
 
