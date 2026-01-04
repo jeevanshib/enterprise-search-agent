@@ -78,9 +78,9 @@ LangGraph is used to:
 
 ### 1️⃣ Start Backend (FastAPI)
 
-bash
+```bash
 uvicorn api.server:app --reload
-
+```
 API Docs:
 
 http://127.0.0.1:8000/docs
@@ -95,8 +95,8 @@ UI:
 
 http://localhost:8501
 
-##📌 Example Query
-###Input
+## 📌 Example Query
+### Input
 What is the leave policy during probation?
 
 Output
