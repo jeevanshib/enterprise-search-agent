@@ -78,5 +78,87 @@ LangGraph is used to:
 
 ### 1️⃣ Start Backend (FastAPI)
 
-```bash
+bash
 uvicorn api.server:app --reload
+
+API Docs:
+
+http://127.0.0.1:8000/docs
+
+## 2️⃣ Start Frontend (Streamlit)
+
+Open a new terminal (same virtual environment):
+
+streamlit run app.py
+
+UI:
+
+http://localhost:8501
+
+##📌 Example Query
+###Input
+What is the leave policy during probation?
+
+Output
+
+Employees on probation are entitled to 6 casual leaves per year
+
+Probation period lasts for 6 months from joining date
+
+Sources
+
+HR_Policy_Leave.pdf
+
+HR_Policy_Probation.pdf
+
+##⚠️ Design Notes & Tradeoffs
+
+- **Document ingestion and vector DB persistence are intentionally mocked in this MVP.
+
+- **The focus is on agent orchestration, routing logic, and grounded answer generation.
+
+- **The architecture cleanly supports plugging in:
+
+- **Chroma / FAISS / Elasticsearch
+
+- **OpenAI / Azure OpenAI
+
+- **Jira, SQL, internal enterprise systems
+
+##🔮 Future Enhancements
+
+- **Real document ingestion & embedding pipelines
+
+- **Authentication and role-based access control
+
+- **Feedback-driven answer re-ranking
+
+- **Streaming responses
+
+- **Multi-turn conversational memory
+
+- **Observability and tracing for agents
+
+##🧪 Testing
+
+The repository includes test scripts for:
+
+- **Context management
+
+- **Routing logic
+
+- **Retrieval agents
+
+- **Evidence aggregation
+
+- **End-to-end pipeline execution
+
+## ✅ Project Status
+
+✔ Backend working
+
+✔ UI working
+
+✔ End-to-end agent pipeline functional
+
+✔ Ready for submission and demo
